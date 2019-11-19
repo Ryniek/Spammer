@@ -23,7 +23,7 @@ public class SenderMail {
     }
 
     @Schedules({
-            @Scheduled(fixedDelay = 10000),
+            @Scheduled(fixedDelay = 15000),
             @Scheduled(cron = "${spring.mail.cronValue}")
     })
     public void sendEmail() {
